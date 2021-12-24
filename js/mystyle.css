@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  } 
+
+body{
+    background-color: rgb(241, 178, 241);
+    padding: 0px 20px;
+}
+
+.wrapper{
+    margin: 150px auto;
+    max-width:550px;
+}
+.wrapper .search-input{
+    width:100%;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+
+}
+
+
+
+.search-input input{
+    width:100%;
+    height: 55px;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 0 60px 0 20px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1) ;
+}
+.search-input .icon{
+    width:55px;
+    position: absolute;
+    right:0px;
+    top:0px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 20px;
+    color:blue;
+    cursor: pointer;
+    text-align: center;
+}
+
+.search-input.active input{
+    border-radius: 20px 20px 0px 0px;
+}
+.search-input .autocom-box{
+    max-height: 300px;
+    opacity: 0;
+    overflow-y: auto;
+    pointer-events: none;
+    padding: 0px;
+}
+.search-input .active .autocom-box{
+    opacity: 1;
+    padding: 10px 8px;
+    pointer-events: auto;
+}
+
+.autocom-box li{
+    list-style: none;
+    display: none;
+    width :100%;
+    padding: 8px 12px;
+    cursor: default;
+    border-radius: 3px;
+
+}
+
+.search-input .active .autocom-box li{
+    display:block;
+}
+
+.autocom-box li:hover{
+    background:#efefef;
+}
