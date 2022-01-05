@@ -3,11 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Arial', sans-serif;
 } /* checked*/
 
 body{
-  background: #644bff;
+  background: #eaf8e1;
   padding: 0 20px;
 }/* checked*/
 
@@ -16,12 +16,20 @@ body{
   background: #664AFF;
 }
 */
-.wrapper{
-  max-width: 550px;
-  margin: 150px auto;
-}/* checked*/
+.head{
+  margin: 100px auto;
+  max-width: 400px;
+  border:#343435 solid;
+  background-color: aliceblue;
 
+}
+.heading{
+  text-align: center;
+  font-size: 30px;
+}
 .wrapper .search-input{
+  max-width: 550px;
+  margin: 100px auto;
   background: #fff;
   width: 100%;
   border-radius: 5px;
@@ -46,7 +54,7 @@ body{
   top: 0px;
   height: 55px;
   width: 55px;
-  text-align: center;
+  text-align: center; 
   line-height: 55px;
   font-size: 20px;
   color: #644bff;
